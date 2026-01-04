@@ -3,21 +3,15 @@
     int random(int n,int random_number){
         random_number = (rand() % 10)+1;
         printf("Enter the number:: ");
-        fflush(stdout);
         scanf("%d",&n);
-        if (n==random_number){
-            printf("correct guess!\n");
+        while(n!=random_number){
+            if(n>random_number){
+                printf("incorrect! the number is smaller than the input");}
+            if else{printf("incorrect! the number is greater than the input");}
+            continue;
         }
-        else if (n<random_number){
-            printf("incorrect! the number is higher than the input\n");
-        }
-        else if (n>random_number){
-            printf("incorrect! the number is smaller than the input\n");
-        }
-        else {
-            printf("invalid input\n");
-        }
-    }
+        if(n==random_number){printf("correct! the number is %d",random_number);}
+        else{printf("invalid input");
     int main(){
         int x;
         int random_number2;
