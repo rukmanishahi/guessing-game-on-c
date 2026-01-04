@@ -11,7 +11,7 @@
             continue;
         }
         if(n==random_number){printf("correct! the number is %d",random_number);}
-        else{printf("invalid input"); return 0;}
+        else{printf("invalid input"); return ;}
     int main(){
         int x;
         int random_number2;
