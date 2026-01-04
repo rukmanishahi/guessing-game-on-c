@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-    int random(n,random_number){
-        int n;
+    int random(int n,int random_number){
         random_number = (rand() % 10)+1;
         printf("Enter the number:: ");
         fflush(stdout);
@@ -11,11 +10,9 @@
         }
         else if (n<random_number){
             printf("incorrect! the number is higher than the input\n");
-            continue;
         }
         else if (n>random_number){
             printf("incorrect! the number is smaller than the input\n");
-            continue ;
         }
         else {
             printf("invalid input\n");
